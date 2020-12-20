@@ -1,0 +1,14 @@
+{
+  "name": "spider",
+  "version": "0.0.1",
+  "description": "Spider with nodejs",
+  "scripts": {},
+  "keywords": [
+    "Spider"
+  ],
+  "author": {
+    "name": "ruofei",
+    "email": "rf.wangchn@foxmail.com"
+  },
+  "license": "MIT"
+}
