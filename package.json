@@ -2,7 +2,9 @@
   "name": "spider",
   "version": "0.0.1",
   "description": "Spider with nodejs",
-  "scripts": {},
+  "scripts": {
+    "start": "nodemon --config nodemon.json src/crowller.ts"
+  },
   "keywords": [
     "Spider"
   ],
@@ -10,5 +12,10 @@
     "name": "ruofei",
     "email": "rf.wangchn@foxmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
 }
