@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Spider with nodejs",
   "scripts": {
-    "start": "nodemon --config nodemon.json src/crowller.ts"
+    "start": "nodemon --config nodemon.json src/crowller.ts",
+    "ncu": "ncu"
   },
   "keywords": [
     "Spider"
@@ -16,6 +17,7 @@
   "devDependencies": {
     "@types/superagent": "^4.1.10",
     "nodemon": "^2.0.6",
+    "npm-check-updates": "^10.2.5",
     "superagent": "^6.1.0",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
