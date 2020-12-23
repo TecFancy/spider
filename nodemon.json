@@ -2,7 +2,7 @@
   "verbose": true,
   "delay": "2500",
   "watch": ["src"],
-  "ignore": ["node_modules", "*.test.js", "fixtures/*"],
+  "ignore": ["node_modules", "dist", "data", "*.test.js", "fixtures/*"],
   "execMap": {
     "ts": "ts-node"
   }

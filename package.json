@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Spider with nodejs",
   "scripts": {
-    "start": "nodemon --config nodemon.json src/crowller.ts",
+    "start": "nodemon --config nodemon.json src/index.ts",
+    "build": "tsc",
     "ncu": "ncu"
   },
   "keywords": [

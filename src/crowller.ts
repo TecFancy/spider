@@ -2,13 +2,11 @@ import fs from "fs";
 import path from "path";
 import superagent from "superagent";
 
-import DellAnalyzer from "./dellAnalyzer";
-
 export interface Analyzer {
   analyze: (html: string, filePath: string) => string;
 }
 
-class Crowller {
+export default class Crowller {
   private filePath = path.resolve(__dirname, "../data/course.json");
 
   private async getRawHtml() {
@@ -30,9 +28,3 @@ class Crowller {
     this.initSpiderProcess();
   }
 }
-
-const secret: string = "x3b174jsx";
-const url = `http://www.dell-lee.com/typescript/demo.html?secret=${secret}`;
-
-const analyzer = DellAnalyzer.getInstance();
-new Crowller(url, analyzer);
