@@ -17,7 +17,7 @@
   "devDependencies": {
     "@types/cheerio": "^0.22.23",
     "@types/superagent": "^4.1.10",
-    "cheerio": "^1.0.0-rc.3",
+    "cheerio": "^1.0.0-rc.5",
     "nodemon": "^2.0.6",
     "npm-check-updates": "^10.2.5",
     "superagent": "^6.1.0",
