@@ -1,4 +1,9 @@
 .vscode
+.DS_Store
+
+node_modules
+
 data
 dist
-node_modules
+
+demo.*
