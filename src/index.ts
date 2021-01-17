@@ -1,8 +1,20 @@
-import Crowller from "./crowller";
-import DellAnalyzer from "./dellAnalyzer";
+import express, { Request, Response } from "express";
+import bodyParser from "body-parser";
+import cookieSession from "cookie-session";
+import router from "./router";
 
-const secret: string = "x3b174jsx";
-const url = `http://www.dell-lee.com/typescript/demo.html?secret=${secret}`;
+const app = express();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(
+  cookieSession({
+    name: "session",
+    keys: ['teacher dell'],
+    // Cookie Options
+    maxAge: 24 * 60 * 60 * 100, // 24 hours
+  })
+);
+app.use(router);
 
-const analyzer = DellAnalyzer.getInstance();
-new Crowller(url, analyzer);
+app.listen(7001, () => {
+  console.log("Server is running.");
+});
